@@ -1,0 +1,111 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "bottem",
+    "position": "top",
+    "spacing": 6,
+
+    // layout
+    "modules-left": [
+        "clock"
+    ],
+    "modules-center": [
+        "hyprland/workspaces",
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "network",
+        // "battery",
+        "tray"
+        // "custom/power"
+    ],
+
+    // config
+    "hyprland/workspaces": {
+        "format": "{name}: {icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "active": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+            "DP-2": [1, 2, 3, 4, 5],
+            "DP-3": [1, 2, 3, 4, 5]
+        },
+    },
+
+    "hyprland/window": {
+        "icon": true,
+        "format": "",
+        "icon-size": 26,
+        "tooltip": false,
+    },
+
+    "clock": {
+        "tooltip": false,
+        "format": "{:%H:%M}",
+        "format-alt": "{:%d %B(%m) %y}"
+    },
+
+    "cpu": {
+        "tooltip": false,
+        "format": "{usage}% "
+    },
+
+    "memory": {
+        "format": "{}% "
+    },
+
+    "network": {
+        "tooltip": true,
+        "rotate": 0,
+        "format-ethernet": " ",
+        "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "󰖪 ",
+        "tooltip-format-disconnected": "Disconnected",
+        "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
+        "interval": 2
+    },
+
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [" ", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
+    // "custom/power": {
+    //     "format" : "⏻",
+    //   "tooltip": false,
+    //     "on-click": "~/.config/rofi/scripts/power-menu.sh"
+    // },
+}

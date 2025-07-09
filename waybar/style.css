@@ -1,0 +1,66 @@
+* {
+    font-family:"CommitMono Nerd Font", monospace;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.1;
+}
+
+/* ------------------- Modules ------------------------ */
+
+#waybar .module {
+    color: #999999;
+    background: #3A465C;
+
+    border-radius: 6px;
+    padding: 0px 16px;
+    margin-top: 4px;
+}
+
+#waybar .modules-left > widget:first-child > #clock {
+    margin-left: 4px;
+}
+
+#waybar .modules-right > widget:last-child > #tray {
+    margin-right: 4px;
+}
+
+#workspaces button {
+    color: #BEC5C7;
+    background: transparent;
+    background-color: #3A465C;
+}
+
+#tray {
+    color: #202020;
+}
+
+#clock {
+    font-size: 16px;
+}
+
+/* ------------------- Tooltip ------------------------ */
+
+tooltip {
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #3A465C;
+}
+
+tooltip label {
+    font-family: "Commit Mono Nerd Font", monospace;
+    padding: 2px;
+}
+
+Label:focus {
+    background-color: #BEC5C7;
+}

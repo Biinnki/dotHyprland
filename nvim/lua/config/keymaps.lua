@@ -6,7 +6,7 @@ vim.keymap.set({ "n", "v" }, "y", '"+y', { noremap = true, silent = true })
 vim.keymap.set("n", "Y", '"+Y', { noremap = true, silent = true })
 
 -- save file
-vim.keymap.set('n', '<C-s>', ':w<CR>', { silent = true })
+vim.keymap.set({'n', 'v'}, '<C-s>', ':w<CR>', { silent = true })
 vim.keymap.set('n', '<C-S-s>', ':wa<CR>', { silent = true })
 
 -- move lines

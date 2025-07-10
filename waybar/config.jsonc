@@ -6,10 +6,10 @@
 
     // layout
     "modules-left": [
-        "clock"
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "hyprland/workspaces",
+        "clock"
     ],
     "modules-right": [
         "pulseaudio",
@@ -25,13 +25,9 @@
     "hyprland/workspaces": {
         "format": "{name}: {icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "active": "",
-            "default": ""
+            "active": "<span foreground='#dac7ed'></span>",
+            "default": ""
+            // "default": ""
         },
         "persistent-workspaces": {
             "DP-2": [1, 2, 3, 4, 5],
@@ -48,17 +44,17 @@
 
     "clock": {
         "tooltip": false,
-        "format": "{:%H:%M}",
-        "format-alt": "{:%d %B(%m) %y}"
+        "format": "{:%d/%m - %H:%M}",
+        "format-alt": "{:%d %B %Y}"
     },
 
     "cpu": {
         "tooltip": false,
-        "format": "{usage}% "
+        "format": "{usage}%  "
     },
 
     "memory": {
-        "format": "{}% "
+        "format": "{}%  "
     },
 
     "network": {
@@ -68,7 +64,6 @@
         "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>",
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "󰖪 ",
-        "tooltip-format-disconnected": "Disconnected",
         "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
         "interval": 2
     },
@@ -79,20 +74,21 @@
     },
 
     "pulseaudio": {
-        "scroll-step": 5, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "tooltip": false,
+        "scroll-step": 5,
+        "format": "<span foreground='#d6694d'>{icon} {volume}%</span> <span foreground='#89b9d6'>{format_source}</span>",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-source": "",
+        "format-source-muted": " ",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
             "default": [" ", " ", " "]
         },
         "on-click": "pavucontrol"

@@ -4,14 +4,14 @@
     font-size: 14px;
 }
 
-window#waybar {
+#waybar {
     background-color: transparent;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: 0.5s;
 }
 
-window#waybar.hidden {
+#waybar.hidden {
     opacity: 0.1;
 }
 
@@ -22,30 +22,55 @@ window#waybar.hidden {
     background: #3A465C;
 
     border-radius: 6px;
-    padding: 0px 16px;
-    margin-top: 4px;
+    padding-bottom:0px;
+    margin-top: 2px;
 }
 
-#waybar .modules-left > widget:first-child > #clock {
-    margin-left: 4px;
-}
-
-#waybar .modules-right > widget:last-child > #tray {
+#tray {
     margin-right: 4px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+#network {
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+#memory {
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+#battery {
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+#cpu {
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+#pulseaudio {
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+#clock {
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+#workspaces {
+    margin-left: 4px;
 }
 
 #workspaces button {
     color: #BEC5C7;
     background: transparent;
+    border: 0px solid transparent;
     background-color: #3A465C;
-}
-
-#tray {
-    color: #202020;
-}
-
-#clock {
-    font-size: 16px;
 }
 
 /* ------------------- Tooltip ------------------------ */

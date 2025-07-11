@@ -15,11 +15,11 @@ vim.keymap.set('n', '<A-k>', ':m .-2<CR>==')
 vim.keymap.set('v', '<A-j>', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', '<A-k>', ":m '<-2<CR>gv=gv")
 
--- move in windows (hotkeys like ctrl + l = move to window left, etc.)
-vim.keymap.set('n', '<C-h>', '<C-w>h')
-vim.keymap.set('n', '<C-j>', '<C-w>j')
-vim.keymap.set('n', '<C-k>', '<C-w>k')
-vim.keymap.set('n', '<C-l>', '<C-w>l')
+-- move in windows (if you dont wanna ues tmux via vim-tmux-navigator)
+-- vim.keymap.set('n', '<C-h>', '<C-w>h')
+-- vim.keymap.set('n', '<C-j>', '<C-w>j')
+-- vim.keymap.set('n', '<C-k>', '<C-w>k')
+-- vim.keymap.set('n', '<C-l>', '<C-w>l')
 
 -- lsp-config
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})

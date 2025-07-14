@@ -62,7 +62,7 @@
         "rotate": 0,
         "format-ethernet": " ",
         "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>",
-        "format-linked": " {ifname} (No IP)",
+        "format-linked": "󰖪 {ifname} (No IP)",
         "format-disconnected": "󰖪 ",
         "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
         "interval": 2
@@ -97,11 +97,5 @@
     "tray": {
         "icon-size": 21,
         "spacing": 10
-    },
-
-    // "custom/power": {
-    //     "format" : "⏻",
-    //   "tooltip": false,
-    //     "on-click": "~/.config/rofi/scripts/power-menu.sh"
-    // },
+    }
 }

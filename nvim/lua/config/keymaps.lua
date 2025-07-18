@@ -5,6 +5,10 @@
 vim.keymap.set({ "n", "v" }, "y", '"+y', { noremap = true, silent = true })
 vim.keymap.set("n", "Y", '"+Y', { noremap = true, silent = true })
 
+-- Change buffer for print
+vim.keymap.set({ 'n', 'v' }, 'p', '"+p', { noremap = true, silent = true })
+vim.keymap.set('n', 'P', '"+P', { noremap = true, silent = true })
+
 -- save file
 vim.keymap.set({'n', 'v'}, '<C-s>', ':w<CR>', { silent = true })
 vim.keymap.set('n', '<C-S-s>', ':wa<CR>', { silent = true })

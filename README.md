@@ -1,12 +1,13 @@
 # dotHyprland
 dotfiles for hyprland
+btw just stow :D
 
 #### Dependencies
 - Commit Mono Font
-- just use stow btw
 
-### Tmux
+#### Tmux
 Run this command to clone TPM:
 ```
-git clone https://github.com/tmux-plugins/tpm ~/dotHyprland/.config/tmux/plugins/tpm
+mkdir -p ~/.local/bin/tmux/plugins
+git clone https://github.com/tmux-plugins/tpm ~/.local/bin/tmux/plugins/tpm
 ```

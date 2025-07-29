@@ -3,6 +3,7 @@ dotfiles for hyprland
 
 #### Dependencies
 - Commit Mono Font
+- just use stow btw
 
 ### Tmux
 Run this command to clone TPM:

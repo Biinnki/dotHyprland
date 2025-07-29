@@ -14,6 +14,12 @@ ZSH_THEME="half-life"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
+#################
+##  Key-Binds  ##
+#################
+
+bindkey -s ^f "~/.local/bin/tmux/plugins/tmux-sessionizer/./tmux-sessionizer\n"
+
 #############
 ##  Alias  ##
 #############

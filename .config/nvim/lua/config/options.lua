@@ -4,13 +4,14 @@ vim.opt.tabstop=2
 vim.opt.softtabstop=2
 vim.opt.shiftwidth=2
 
-
+vim.opt.signcolumn = "yes"
 vim.opt.smartindent=true
 
 -- nice to have
 vim.opt.scrolloff=8
 
 -- linenumbers
+vim.opt.number=true
 vim.opt.relativenumber=true
 
 -- clipboard
@@ -22,5 +23,5 @@ vim.diagnostic.config({
   signs = true,
   underline = true,
   update_in_insert = false,
-  severity_sort = true,
+  severity_sort = false,
 })

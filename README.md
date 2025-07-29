@@ -8,5 +8,5 @@ dotfiles for hyprland
 ### Tmux
 Run this command to clone TPM:
 ```
-git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/dotHyprland/.config/tmux/plugins/tpm
 ```

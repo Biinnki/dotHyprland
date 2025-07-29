@@ -10,4 +10,12 @@ Run this command to clone TPM:
 ```
 mkdir -p ~/.local/bin/tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.local/bin/tmux/plugins/tpm
+tmux source-file ~/dotHyprland/.config/tmux/tmux.conf
+```
+
+#### Stow
+```
+sudo pacman -S stow
+cd dotHyprland
+stow .
 ```

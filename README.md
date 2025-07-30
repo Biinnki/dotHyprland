@@ -1,6 +1,6 @@
 # dotHyprland
 dotfiles for hyprland
-btw just stow :D
+btw just use stow :D
 
 #### Dependencies
 - Commit Mono Font

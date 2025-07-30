@@ -27,4 +27,9 @@ bindkey -s ^f "~/.local/bin/tmux/plugins/tmux-sessionizer/./tmux-sessionizer\n"
 alias p='sudo pacman'
 alias vi='nvim'
 
+unalias l
+alias l='exa --icons --long -a'
+unalias ls
+alias ls='exa --icons --long'
+
 nitch

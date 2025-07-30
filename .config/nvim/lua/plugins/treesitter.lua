@@ -6,8 +6,6 @@ return {
     config.setup({
       ensure_installed = {
         "markdown",
-        "markdown_inline",
-        "odin",
       },
       autoinstall = true,
       highlight = { enable = true },

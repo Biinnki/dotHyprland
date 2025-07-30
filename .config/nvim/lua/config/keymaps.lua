@@ -43,6 +43,9 @@ vim.keymap.set('n', '<leader>fb', telescope.buffers, { desc = "Buffer", silent =
 vim.keymap.set('n', '<leader>bf', telescope.buffers, { desc = "Find", silent = true })
 vim.keymap.set('n', '<leader>fh', telescope.help_tags, { desc = "Help", silent = true })
 
+-- for tmux-sessionizer
+vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww ~/.local/bin/tmux/plugins/tmux-sessionizer/./tmux-sessionizer<CR>', { silent = true })
+
 -- neo tree
 vim.keymap.set('n', '<leader>e', ':Neotree toggle filesystem reveal left<CR>', { desc = "Filesystem", silent = true })
 

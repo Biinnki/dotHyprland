@@ -10,6 +10,13 @@ return {
   lazy = false, -- neo-tree will lazily load itself
   --@module "neo-tree"
   --@type neotree.Config?
-  opts = {
-  },
+  config = function()
+    require('neo-tree').setup {
+      filesystem = {
+        filtered_items = {
+          visible = true,
+        }
+      }
+    }
+  end,
 }
